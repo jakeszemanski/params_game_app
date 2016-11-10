@@ -1,0 +1,9 @@
+<p>Use the ?guess_number= to guess a number</p>
+<p><%= @number %> </p>
+<% if @guess == 36 %>
+<p> <%= 'correct!' %> </p>
+<% elsif @guess < 36 %> 
+<p><%= 'Higher!' %></p>
+<% elsif @guess > 36 %>
+<%= 'Lower!' %>
+<% end %>
